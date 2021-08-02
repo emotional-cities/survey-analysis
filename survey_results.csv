@@ -1,0 +1,127 @@
+Partner,Area of Interest,Description,Does the dataset contain PII?,File Size,Operation,Software/ programming language?,Spatially enabled?,Geotag,CRS,Spatial resolution,Temporal resolution,Frequency of data,File format,File format (Other),Is it proprietary?,Are you going yo provide metadata?,Metadata standard,Metadata standard (Other),User,Use Cases,Specific SDI Requirements - Notes,Expected availability date,Extra infos,Timestamp,Name,Email
+FMUL,Lisbon,Eye tracking/ gaze data,No,around 3 MB,W,Proprietary software that comes w/ hardware,No,,,,< 1 ms,1 experiment/ subject,CSV,"CSV, Plain text, XML, Matlab",Yes,Yes,,ad-hoc,Phd and post docs,Data analysis,"storage/redundancy, access through VPN, security levels (access control), CSV",1/1/2022,,6/18/2021 11:54:14,Bruno Miranda,bruno.miranda@medicina.ulisboa.pt
+FMUL,Lisbon,Clinical information,Yes,very small,W,spreadsheet,Yes,Postcode,,Postcode,,,XML,spreadsheet,No,Yes,,,researchers,Data analysis,"security, encryption, access control, redundancy",1/1/2022,,6/18/2021 12:00:03,Bruno Miranda,bruno.miranda@medicina.ulisboa.pt
+DTU,Copenhagen,Road network,No,few  hundred MBs,R,"python w/
+OverlassAPI",Yes,coordinates,WGS84/ Danish -> EPSG:25832,1 meter / OSM,,Once,Multiple,"Shapefile, CSV",No,Yes,,Custom,Modellers/ scientists,ABM model,"format conversion; support visualization - CSV, Shapefile, GeoJSON",11/1/2021,,6/18/2021 10:56:08,Carlos Azevedo,climaz@dtu.dk
+IGOT,Lisbon,Twitter data,Yes, multiple files of 10 MB,R,Python,Yes,coordinates,WGS84,Coordinates,streaming,streaming,CSV,,No,Yes,,SNIG - INSPIRE,Researchers,"Sentiment analysis, emotions, mobility","data in different formats, interactive mapping, timestamp support, - analysis in R, Python",9/1/2021,,6/25/2021 11:42:50,Jorge Rocha,jorge.rocha@campus.ul.pt
+IGOT,Metropolitan area of Lisbon,Modis/ Sentinel 5 - Air pollution,No,20 - 40 GB each file,R,Google earth engine - Python,Yes,Georeferenced,WGS84,250-2000 meters,Daily,"For now, one time, but we can collect multiple times.",GeoTIFF,,No,Yes,,INSPIRE,Researchers,Modelling air pollution,"For research/cross with other data - Python, R, IDRISI, Envi",7/31/2021,,6/25/2021 12:05:11,Jorge Rocha,jorge.rocha@campus.ul.pt
+CLIMA,Copenhagen,Environmental exposure,No,20Mb per hour,R & W,Python,Yes,Coordinates,WGS84,Coordinates,1 second,Streaming,CSV,GeoJSON,No,Yes,,,Researchers,Data analysis,Define an interface between Climateflux server and SDI - Sharing data with other EC partners,1/1/2022,,6/28/2021 11:25:27,Climateflux,emocities@climateflux.com
+CLIMA,Michigan,Environmental exposure,No,20Mb per hour,R & W,Python,Yes,Coordinates,WGS84,Coordinates,1 second,Streaming,CSV,GeoJSON,No,Yes,,,Researchers,Data analysis,Define an interface between Climateflux server and SDI - Sharing data with other EC partners,1/1/2022,,6/28/2021 11:25:27,Climateflux,emocities@climateflux.com
+CLIMA,Lisbon,Environmental exposure,No,20Mb per hour,R & W,Python,Yes,Coordinates,WGS84,Coordinates,1 second,Streaming,CSV,GeoJSON,No,Yes,,,Researchers,Data analysis,Define an interface between Climateflux server and SDI - Sharing data with other EC partners,1/1/2022,,6/28/2021 11:25:27,Climateflux,emocities@climateflux.com
+MSU,Michigan,US Census tiger geometries,No,< 20 MB,R,Direct download,Yes,Coordinates,WGS84,Block / Census tract,1 years / 10 year,once,Shape File,,No,Yes,isotc211,,WP4,Data analysis - link w/ non spatial census data,Converting in other SRS and formats - Sharing data,1/3/2022,https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html,6/18/2021 15:28:02,Zeenat Kotval-K,kotvalze@msu.edu
+MSU,Michigan,US Census - tabular data,No,< 2Mb,R,Direct download,Yes,Block / Census tract,,Block / Census tract,1 years / 10 year,once,CSV,,No,Yes,,Custom,WP4,Data analysis,Join with spatial boundaries - Sharing data,1/3/2022,"US Census - 
+https://data.census.gov",6/18/2021 15:28:02,Zeenat Kotval-K,kotvalze@msu.edu
+MSU,Michigan,Sentiment Map,No,About 50Mb,W,ArcGIS,Yes,Coordinates,WGS84,1 meter,,once,Shape File,,No,Yes,,To define,Public,Interact with map - Dashboard - Show images and results,Interactive maps - Georeferenced images,1/3/2023,Created from other data,6/18/2021 15:28:02,Zeenat Kotval-K,kotvalze@msu.edu
+MSU,Michigan,Urban physical characteristics,No,Don't know yet,R,ArcGIS,Yes,Coordinates,Usually WGS84,Census tract level,1/10 years,Once,Shape File,,No,Maybe,,We will provide the same Metadata that we get from the data source,EC researchers,Spatial data analysis,,,,6/17/2021 17:00:10,Zeenat Kotval-K,kotvalze@msu.edu
+MSU,Michigan,Health data ,No,Don't know yet,R,ArcGIS,Yes,Coordinates,Usually WGS84,Census tract level,1/10 years,Once,Shape File,,No,Maybe,,We will provide the same Metadata that we get from the data source,EC researchers,Spatial data analysis,,,,6/17/2021 17:00:10,Zeenat Kotval-K,kotvalze@msu.edu
+MSU,"Michigan, USA","RAW DATASET - Magnetic resonance imaging of the brain. 
+This will include functional data (brain activity)
+and structural data (brain anatomy).
+ We will collect this data for around 60 participants.",Yes,"Total raw data will
+ be around 50GB,",W,"Matlab, E-Prime,
+Python",Yes,"The place of the experiment
+may be geotagged and the 
+data associated to the 
+experiment may also be geotagged",,,around 2 sec,1-time data collection,Other,.dcm or .nii files,No,Maybe,,,Researchers here in Michigan who will be analyzing the brain data,"Associations between brain and behaviours 
+of people. Out of sandbox prediction","Share data, in a secure environment",2022/2023,N/A,6/28/2021 17:30:10,Dar Meshi,darmeshi@gmail.com
+MSU,"Michigan, USA","Pseudonymized DATASET - Magnetic resonance imaging of the brain. 
+This will include functional data (brain activity)
+and structural data (brain anatomy).
+ We will collect this data for around 60 participants.",No,"Total raw data will
+ be around 50GB,",R & W,"Matlab, E-Prime,
+Python",Yes,"The place of the experiment
+may be geotagged and the 
+data associated to the 
+experiment may also be geotagged",,,around 2 sec,1-time data collection,Other,.dcm or .nii files,No,Maybe,,,Researchers here in Michigan who will be analyzing the brain data,"Associations between brain and behaviours 
+of people. Out of sandbox prediction","Share data, in a secure environment",2022/2023,Raw data,6/28/2021 17:30:10,Dar Meshi,darmeshi@gmail.com
+MSU,"Michigan, USA",Analysis of the Magnetic resonance imaging of the brain. ,No,Over 100 GB,R & W,"FSL, SPM",Yes,"The place of the experiment
+may be geotagged and the 
+data associated to the 
+experiment may also be geotagged",,,around 2 sec,1-time data collection,Other,.dcm or .nii files,No,Maybe,,,Researchers here in Michigan who will be analyzing the brain data,"Associations between brain and behaviours 
+of people. Out of sandbox prediction","Share data, in a secure environment",2022/2023,Pseudonymized data,6/28/2021 17:30:10,Dar Meshi,darmeshi@gmail.com
+CAMB,London,Child obesity,No,< 1MB,R,Direct download,Yes,"GLA, borough",GeoJSON,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,"WP6, WP7, Public (Open data)","GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,City and site level ,Social media data,Yes,100GB,R,Python,Yes,Coordinates,WGS84,GPS resolution (meters),Minutes,Multiple,JSON,,No,Yes,,,WP Researchers - Open access for processed data,"Sentiment analysis, spatial clustering",Access via SQL,9/1/2022,Twitter API,6/14/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Life Expectancy at birth,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Mortality rate,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Daily,Daily,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Sports Participation,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Suicide rate,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Well-being Index,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Depression,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Safe Index,No,< 10MB,W,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Life Expectancy at birth,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Mortality rate,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Daily,Daily,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Sports Participation,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Suicide rate,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Well-being Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Depression,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Safe Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Safe Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+ interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
+https://data.london.gov.uk",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Prevalence of Childhood Obesity,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP Researchers - Open data,GIS analysis,"Link to the original dataset, access the SDI from QGIS",9/1/2022,"Prevalence of Childhood Obesity, Borough, Ward and MSOA - London Datastore",6/21/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Life Expectancy at birth,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP Researchers - Open data,GIS analysis,"Link to the original dataset, access the SDI from QGIS",9/1/2022,"Life Expectancy at Birth and at Age 65, Borough - London Datastore",6/22/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Mortality rate,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Daily,Daily,XLS,,Yes,Yes,,,WP Researchers - Open data,GIS analysis,"Link to the original dataset, access the SDI from QGIS",9/1/2022,"Deaths and Mortality Ratios, Borough - London Datastore",6/23/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Prevalence of Childhood Obesity,No,< 10MB,W,QGIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoPackage,,No,Yes,,,WP Researchers - Open data,"GIS analysis,
+ interactive mapping","Integrate with a widget showing statistical summary,  create interactive mapping, access the SDI from QGIS",9/1/2022,"Prevalence of Childhood Obesity, Borough, Ward and MSOA - London Datastore",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Life Expectancy at birth,No,< 10MB,W,QGIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoPackage,,No,Yes,,,WP Researchers - Open data,"GIS analysis,
+ interactive mapping","Integrate with a widget showing statistical summary,  create interactive mapping, access the SDI from QGIS",9/1/2022,"Life Expectancy at Birth and at Age 65, Borough - London Datastore",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,Mortality rate,No,< 10MB,W,QGIS,Yes,"GLA, borough",WGS84,Burough,Daily,Daily,GeoPackage,,No,Yes,,,WP Researchers - Open data,"GIS analysis,
+ interactive mapping
+","Integrate with a widget showing statistical summary,  create interactive mapping, access the SDI from QGIS",9/1/2022,"Deaths and Mortality Ratios, Borough - London Datastore",6/14/2021 12:38:54,Haifeng Niu,hn303@cam.ac.uk
+CAMB,"England, UK",Practice Level Prescribing Presentation-level Data,No,< 300 MB,R,Direct download,No,,,,Monthly,Monthly,ZIP,,Yes,Yes,,,WP Researchers - Open data,"Geocoding, data refining",Link to the original dataset,9/1/2022,Practice Level Prescribing Data - NHS Digital,6/14/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,"England, UK",Noise mapping: Rail noise,No,< 200 MB,R,Direct download,Yes,Grid (10m),OSGB 1936,Grid (10 meters),Yearly,Yearly,Shape File,,No,Yes,,,WP Researchers - Open data,"Spatial interaction,
+ interactive mapping",Link to the original dataset,9/1/2022,Defra Data Services Platform,6/15/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,London,OpenStreetMap POIs,No,,R,OSM plugin via QGIS,Yes,Coordinates,WGS84,GPS resolution (meters),Multiple,Multiple,GeoPackage,,No,Yes,,,WP Researchers - Open data,"Spatial statistics, feature selection, spatial interaction","Integrate with a widget showing statistical summary, GeoPackage with multiple geomtries",9/1/2022,OpenStreetMap,6/18/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,"Great Britain, UK",OS VectorMap District,No,< 200 MB,R,Direct download,Yes,Coordinates,OSGB 1936,Building features,-,Biannually,Shape File,,No,Yes,,,WP Researchers - Open data,"Spatial statistics, feature selection",access the SDI from QGIS,9/1/2022,OS VectorMap® District | OS Data downloads | OS Data Hub,6/19/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,Europe,Visible Infrared Imaging Radiometer Suite (VIIRS),No,< 1 GB,R,Direct download,Yes,500m,WGS84,500 meters,Monthly,Monthly,GeoTIFF,,No,Yes,,,WP Researchers - Open data,Raster processing,Support by a transparency slider,9/1/2022,Earth Observation Goup (mines.edu),6/16/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,City and site level ,Social media data,Yes,100 GB,R,Python,Yes,Coordinates,WGS84,GPS resolution (meters),Minutes,Multiple,JSON,,No,Yes,,,WP4,"Sentiment analysis, spatial clustering",Access via SQL,9/1/2022,Twitter API,6/17/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+CAMB,City and site level ,Sentiment result from social media data,Maybe,< 1 GB,W,Python and QGIS,Yes,Coordinates,WGS84,GPS resolution (meters),Minutes,Multiple,GeoPackage,,No,Yes,,,WP Researchers - Open data,"Spatial clustering,
+ interactive mapping",Include explanary text for sentiment analysis algorithm on the interative map,9/1/2022,Twitter API,6/20/2021 12:58:27,Haifeng Niu,hn303@cam.ac.uk
+NGR,City of Experiments,Gaze data (Indoors),Maybe,300 MB / min,W,Pupil Capture,Indirectly,N/A,WGS84,N/A,Multiple,Binary,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,"To store with:
+- Pupil Video (x2)
+- World Video
+- Pupil Tracking Data",9/1/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,Gaze data (Outdoors),Maybe,24MB / min,W,Pupil Invisible,Indirectly,N/A,WGS85,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,"To store with:
+- Pupil Video (x2)
+- World Video
+- Pupil Tracking Data",9/2/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,Electrodermal Activity,Maybe,24MB / min,W,C# / Bonsai,Indirectly,N/A,WGS86,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/3/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,Heart Rate,Maybe,,W,C# / Bonsai,Indirectly,N/A,WGS87,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/4/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,Pulse Oxymeter (Ox2),Maybe,,W,C# / Bonsai,Indirectly,N/A,WGS88,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/5/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,9 DOF (Outdoors / Head),Maybe,,W,C# / Bonsai,Indirectly,N/A,WGS89,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/6/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,GPS+RTK (Outdoors / Body),Maybe,,W,C# / Bonsai,Yes,N/A,WGS90,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/7/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,Climateflux (Outdoors),Maybe,,W,?,Indirectly,N/A,WGS91,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/8/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,EEG (Indoors),Maybe,,W,LSL,Indirectly,N/A,WGS92,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/9/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,EEG (Outdoors),Maybe,,W,LSL,Indirectly,N/A,WGS93,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/10/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,SLAM (Outdoors),Maybe,,W,C# / Bonsai,Indirectly,N/A,WGS94,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/11/2021,,,Goncalo Lopes,g.lopes@neurogears.org
+NGR,City of Experiments,VR GPS Tracking (Indoors),Maybe,,W,Unity / Unreal Engine,Yes,N/A,WGS95,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/12/2021,,,Goncalo Lopes,g.lopes@neurogears.org
