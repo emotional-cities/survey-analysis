@@ -1,5 +1,5 @@
 Partner,Area of Interest,Description,Does the dataset contain PII?,File Size,Operation,Software/ programming language?,Spatially enabled?,Geotag,CRS,Spatial resolution,Temporal resolution,Frequency of data,File format,File format (Other),Is it proprietary?,Are you going yo provide metadata?,Metadata standard,Metadata standard (Other),User,Use Cases,Specific SDI Requirements - Notes,Expected availability date,Extra infos,Timestamp
-FMUL,Lisbon,Eye tracking/ gaze data,No,around 3 MB,W,Proprietary software that comes w/ hardware,No,,,,< 1 ms,1 experiment/ subject,CSV,"CSV, Plain text, XML, Matlab",Yes,Yes,,ad-hoc,Phd and post docs,Data analysis,"storage/redundancy, access through VPN, security levels (access control), CSV",1/1/2022,,6/18/2021 11:54:14
+FMUL,Lisbon,Eye tracking/ gaze data,No,around 3 MB,W,Proprietary software,No,,,,< 1 millisecond,1 experiment/ subject,CSV,"CSV, Plain text, XML, Matlab",Yes,Yes,,ad-hoc,Phd and post docs,Data analysis,"storage/redundancy, access through VPN, security levels (access control), CSV",1/1/2022,,6/18/2021 11:54:14
 FMUL,Lisbon,Clinical information,Yes,very small,W,spreadsheet,Yes,Postcode,,Postcode,,,XML,spreadsheet,No,Yes,,,researchers,Data analysis,"security, encryption, access control, redundancy",1/1/2022,,6/18/2021 12:00:03
 DTU,Copenhagen,Road network,No,few  hundred MBs,R,"python w/
 OverlassAPI",Yes,coordinates,WGS84/ Danish -> EPSG:25832,1 meter / OSM,,Once,Multiple,"Shapefile, CSV",No,Yes,,Custom,Modellers/ scientists,ABM model,"format conversion; support visualization - CSV, Shapefile, GeoJSON",11/1/2021,,6/18/2021 10:56:08
@@ -64,28 +64,28 @@ https://data.london.gov.uk",6/14/2021 12:38:54
 CAMB,London,Safe Index,No,< 10MB,W,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Life Expectancy at birth,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Life Expectancy at birth,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Mortality rate,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Daily,Daily,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Mortality rate,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Daily,Daily,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Sports Participation,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Sports Participation,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Suicide rate,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Suicide rate,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Well-being Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Well-being Index,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Depression,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Depression,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Safe Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Safe Index,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
-CAMB,London,Safe Index,No,< 10MB,W,GIS?,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
+CAMB,London,Safe Index,No,< 10MB,W,GIS,Yes,"GLA, borough",WGS84,Burough,Yearly,Yearly,GeoJSON,,No,Yes,,,WP6 - WP7 - Open data,"GIS analysis,
  interactive mapping",Link to the original dataset,9/1/2022,"London data store - 
 https://data.london.gov.uk",6/14/2021 12:38:54
 CAMB,London,Prevalence of Childhood Obesity,No,< 1MB,R,Direct download,Yes,"GLA, borough",,Burough,Yearly,Yearly,XLS,,Yes,Yes,,,WP Researchers - Open data,GIS analysis,"Link to the original dataset, access the SDI from QGIS",9/1/2022,"Prevalence of Childhood Obesity, Borough, Ward and MSOA - London Datastore",6/21/2021 12:58:27
@@ -125,3 +125,4 @@ NGR,City of Experiments,EEG (Indoors),Maybe,,W,LSL,Indirectly,N/A,WGS92,N/A,Mult
 NGR,City of Experiments,EEG (Outdoors),Maybe,,W,LSL,Indirectly,N/A,WGS93,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/10/2021,,
 NGR,City of Experiments,SLAM (Outdoors),Maybe,,W,C# / Bonsai,Indirectly,N/A,WGS94,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/11/2021,,
 NGR,City of Experiments,VR GPS Tracking (Indoors),Maybe,,W,Unity / Unreal Engine,Yes,N/A,WGS95,N/A,Multiple,,Binary,CSV,No,Yes,,JSON / XML,"FMUL, NGR",WP5,,9/12/2021,,
+SLAB,Detroit,We will record timeseries EEG data that will be stored in plain text format. The devices use propietary format: .easy and .info.,No,100MB / file,R & W,Proprietary software,No,,,,2 milliseconds ,,Plain Text,.easy and .info,Yes,No,,,Starlab research team ,We will collect the EEG data of the patients while experiencing a place in order to extract the emotional state of the subject. ,"Must comply with Project data management and privacy plan, Must allow remote secure acces to the data for storing and for reading of the data. Must allow correct indexation and identification of the data.  ",10/2/2021,,
