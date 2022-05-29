@@ -7,3 +7,4 @@ This notebook uses the [OpenCage geocoder](https://opencagedata.com/), to geocod
 1. Signup for a free key [here](https://opencagedata.com/users/sign_up).
 2. Create a configuration file at the root of this folder, called `config.py`. The contents of this file should be `OpenCage = {'key': '[PUT YOUR KEY HERE]'}`.
 
+[![DOI](https://zenodo.org/badge/391915296.svg)](https://zenodo.org/badge/latestdoi/391915296)
